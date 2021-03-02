@@ -1,0 +1,10 @@
+body {
+  background: #000;
+  background-image: url("../assets/images/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+h1 {
+  color: #cefd04;
+}
