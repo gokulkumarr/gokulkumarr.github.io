@@ -1,10 +1,56 @@
-body {
-  background: #000;
-  background-image: url("../assets/images/bg.jpg");
-  background-attachment: fixed;
-  background-repeat: repeat;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: #cefd04;
+::selection {
+  background: #8e2de2;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  /* background-color: #fffa65;*/
+  background: #f5f6fa;
+  color: #0b1f32;
+  font-family: "Nunito", sans-serif;
+}
+
+.top-level {
+  color: #fff;
+  height: 45%;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+.top-level img {
+  width: 30%;
+  box-shadow: 0rem 0rem 1rem 0.1rem #fff;
+}
+
+.card-shadow {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.375rem;
+}
+
+.card-body b {
+  font-weight: 600;
+  background: #8e2de2;
+  color: #fff;
+  padding: 0.1rem 0.5rem;
 }
